@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    background: url(https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    color: rgb(164, 174, 184);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 35px;
+}
+
+h2 {
+    font-size: 15px;
+    bottom: 0;
+    text-align: center;
+}
+
+.cabeca {
+    font-size: 20px;
+    justify-content: center;
+}
+
+.cabeca h1 {
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 40px auto 0px auto;
+    perspective: 900px;
+}
+
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 45s infinite forwards linear;
+}
+
+.imagem {
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.25);
+    border-radius: 20%;
+    display: flex;
+}
+
+
+.imagem span {
+    margin: auto;
+    font-size: 1em;
+    color: #fff;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1) {
+    background-image: url(https://www.stockvault.net/data/2011/04/03/120880/preview16.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2) {
+    background-image: url(https://www.stockvault.net/data/2013/04/07/143806/preview16.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3) {
+    background-image: url(https://www.stockvault.net/data/2012/07/06/132446/preview16.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+
+}
+
+.imagem:nth-child(4) {
+    background-image: url(https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5) {
+    background-image: url(https://www.stockvault.net/data/2012/09/08/135250/preview16.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6) {
+    background-image: url(https://www.stockvault.net/data/2020/01/18/272608/preview16.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7) {
+    background-image: url(https://www.stockvault.net/data/2013/03/31/143433/preview16.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8) {
+    background-image: url(https://www.stockvault.net/data/2009/11/06/111553/preview16.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9) {
+    background-image: url(https://www.stockvault.net/data/2011/04/06/121169/preview16.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+}
